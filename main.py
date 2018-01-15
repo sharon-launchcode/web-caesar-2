@@ -38,11 +38,15 @@ form = """
 </html>
 """
 
-@app.route("/")
-def index():
-    return form.format("")
+#@app.route("/")
+#def index():
+    #return form.format("")
     #return form
     #return form without above knocks out css
+
+@app.route("/")
+def index():
+    return render_template("index.html")    
 
 @app.route("/", methods=['POST'])
 def encrypt():
