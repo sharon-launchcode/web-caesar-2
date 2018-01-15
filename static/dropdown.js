@@ -54,8 +54,8 @@
       }
     }
   }
-  function testDropdown2() {
-    document.getElementById("testDropdownButton2").classList.toggle("show");
+  function amautoDropdown() {
+    document.getElementById("amautoDropdownButton").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
