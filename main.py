@@ -48,14 +48,14 @@ form = """
 def index():
     return render_template("index.html")    
 
-@app.route("/", methods=['POST'])
-def encrypt():
-        text = request.form['text']
-        rot = int(request.form['rot'])
-        answer =  rotate_string(text, rot)
+#@app.route("/", methods=['POST'])
+#def encrypt():
+        #text = request.form['text']
+        #rot = int(request.form['rot'])
+        #answer =  rotate_string(text, rot)
         #return render_template('/index.html', answer=answer)
         #return answer
-        return form.format(answer)
+        #return form.format(answer)
 
 
 app.run()
